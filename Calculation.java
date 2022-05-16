@@ -1,16 +1,19 @@
+import java.util.Scanner;
 
 public class Calculation {
 	public static void main(String[] args) {
-		for(int i = 0; i < args.length; i++){
-			System.out.println("Index " + i + " => " + args[i]);
-		}
-		additionOfNum(Integer.parseInt(args[0]), Integer.parseInt(args[1]));
-		additionOfNum(Integer.parseInt(args[2]), Integer.parseInt(args[3]));
-		additionOfNum(Integer.parseInt(args[4]), Integer.parseInt(args[5]));
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter 1st number");
+		int num1 = scanner.nextInt();
+		System.out.print("Enter 2nd number");
+		float num2 = scanner.nextFloat();
+		additionOfNum(num1, num2);
 	}
 
-	public static void additionOfNum(int num1, int num2) {
-		int result = num1 + num2;
+	public static void additionOfNum(int num1, float num2) {
+		float result = num1 + num2;
 		System.out.println("Result====>" + result);
 	}
+
+
 }
