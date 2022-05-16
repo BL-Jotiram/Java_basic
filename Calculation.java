@@ -7,6 +7,6 @@ public class Calculation {
 
 	public static void additionOfNum(int num1, int num2) {
 		int result = num1 + num2;
-    System.out.println("Result====>" + result);
+		System.out.println("Result====>" + result);
 	}
 }
